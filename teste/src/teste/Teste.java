@@ -4,6 +4,8 @@
  */
 package teste;
 
+import java.util.Scanner;
+
 /**
  *
  * @author igora
@@ -17,12 +19,21 @@ public class Teste {
               System.out.println("DSLHJAASDSDHJKA");
        }
     public static void main(String[] args) {
+       Scanner leitor = new Scanner(System.in);
         
-        System.out.println ("Começando a execução do programa.");
-
-            olaMetodos();
-
-        System.out.println ("Terminando a execução do programa.");
+        Integer A,B;
+        
+        System.out.println("Informe o primeiro numero");
+         A = leitor.nextInt();
+        
+        System.out.println("Informe o segundo numero");
+         B = leitor.nextInt();
+         
+         if(A == B){
+             System.out.println("Sao iguais!");
+         } else{
+             System.out.println("Nao sao iguais!");
+         }
     }
     
 }
